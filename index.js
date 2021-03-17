@@ -45,6 +45,7 @@ function showStopwatch(){
 }
 
 function startTimer(){
+
     if(startBtn.textContent==="Start"){
      startBtn.textContent="Stop";
      // for stopwatch
@@ -87,8 +88,7 @@ function startTimer(){
                 clearInterval(timerId);
             }
             }
-                     
-
+ 
      }
     }else{
         startBtn.textContent="Start";
@@ -147,4 +147,3 @@ stopwatchBtn.addEventListener('click',showStopwatch);
 startBtn.addEventListener('click',startTimer);
 countBtn.addEventListener('click',addCount);
 resetBtn.addEventListener('click',resetTimer);
-// secondInput.addEventListener('input',fillAllInputs)
